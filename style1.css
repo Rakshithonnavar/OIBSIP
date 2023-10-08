@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    width: 100%;
+}
+
+.title-head {
+    color: white;
+    
+}
+.navbar-brand{
+    text-align: center;
+    justify-content: center;
+}
+
+.desc-head {
+    color: white;
+}
+
+.del-head {
+    color: white;
+}
+
+hr {
+    border-top: 1px solid white;
+}
+
+.form-control{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 12px;
+    border-radius: 5px;
+    justify-content: center;
+    position: relative;
+}
+.main-heading{
+    font-weight: bold;
+    text-align: center;
+    font-size: 28px;
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    left: -100%;
+    animation: slide-in-animation 1s forwards;
+  }
+  @keyframes slide-in-animation {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  .
