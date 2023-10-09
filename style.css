@@ -6,13 +6,14 @@
 
 body{
     background-color: yellow;
-    color: antiquewhite;
+    color: red;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     min-height:  100vh;
 }
 
 header{
     font-size: 1.5rem;
+  
 }
 
 header,form{
@@ -33,17 +34,26 @@ form button
     border-radius: 2rem;
 }
 
+form button{
+    color: rgb(255, 200, 0);
+    background: white;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    margin-left: 0.5rem;
+}
 form button:hover{
     color: white;
-    background: red;
+    background: rgb(255, 200, 0);   
 }
+
+
 
 .fa-plus-circle{
     margin-top: 0.3rem;
     margin-left: -8px;
 }
 
-.todo-conatainer{
+.todo-container{
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -71,6 +81,19 @@ form button:hover{
     flex: 1;
 }
 
+.trash-btn,
+.complete-btn{
+   color: white;
+   border: none;
+   padding: 1rem;
+   cursor: pointer;
+   font-size: 1.5rem;
+}
+
+.complete-btn{
+  background: rgb(255, green, blue)
+}
+
 .trash-btn{
     border-top-right-radius: 1.75rem;
     border-bottom-right-radius: 1.75rem;
@@ -81,7 +104,7 @@ form button:hover{
    padding: 0rem 0.5rem;
 }
 
-.fa-trash
+.fa-trash,
 .fa-check-circle
 {
     pointer-events: none;
@@ -98,11 +121,14 @@ form button:hover{
 }
 
 select{
-
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
 }
 
-.select
-{
+.select{
     margin:1rem;
     position: relative;
     overflow: hidden;
@@ -110,15 +136,18 @@ select{
 }
 
 select{
+    color: black;
     width: 10rem;
     height:3.2rem;
     cursor: pointer;
     padding: 1rem;
+    font-size: 15px;
 }
 
 .select::after{
     content: "\25BC";
     position: absolute;
+    background: rgb(255,200,0);
     top:0;
     right:0;
     padding: 1rem;
@@ -128,7 +157,7 @@ select{
 
 .select::hover::after{
     background: white;
-    color: aquamarine;
+    color: rgb(255,200,0);
 }
 
 
@@ -163,72 +192,3 @@ select{
 
 
 
-body {
-    background-image:
- 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    linear-gradient(rgba(23, 24, 34, 0.600),
-        rgba(23, 24, 34, 0.600)),
-    url('../images/water-blue.jpg');
-    width: 100%;
-}
-
-.title-head {
-    color: black;
-    
-    
-}
-/* .navbar-brand{
-    text-align: center;
-    justify-content: center;
-} */
-
-.desc-head {
-    color: black;
-    
-}
-
-.del-head {
-    color: black
-}
-
-hr {
-    border-top: 1px solid white;
-    
-}
-
-.form-control{
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    margin-top: 12px;
-    border-radius: 5px;
-    justify-content: center;
-    position: relative;
-}
-.main-heading{
-    font-weight: bold;
-    text-align: center;
-    font-size: 28px;
-    position: relative;
-    font-family: 'Times New Roman', Times, serif;
-    left: -100%;
-    animation: slide-in-animation 1s forwards;
-  }
-
-  @keyframes slide-in-animation {
-    from {
-      left: -50%;
-    }
-    to {
-      left: 0;
-    }
-  }
