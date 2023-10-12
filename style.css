@@ -10,6 +10,11 @@ body {
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
 }
+
+.todo-input{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200;
+}
 header {
     font-size: 1.2rem;
     font-weight: bold;
@@ -19,7 +24,7 @@ header {
 @keyframes fade-in {
     from { opacity: 0; }
     to { opacity: 1; }
-  }
+}
 
 header, 
 form {
@@ -27,7 +32,6 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 form input, 
@@ -81,11 +85,12 @@ form button:hover {
     justify-content: space-between;
     align-items: center;
     transition: 0.5s;
-    border-radius: 2rem;
+    border-radius: 2rem;  
 }
 
 .todo li {
     flex: 1;
+
 }
 
 .trash-btn, 
@@ -131,8 +136,7 @@ select {
     -moz-appearance: none;
     appearance: none;
     outline: none;
-    border: none;
-    
+    border: none;  
 }
 
 .select {
@@ -148,7 +152,7 @@ select {
     height: 3.2rem;
     cursor: pointer;
     padding: 1rem;
-   
+    font-weight: bold;
 }
 
 .select::after {
@@ -160,6 +164,7 @@ select {
     padding: 1rem;
     pointer-events: none;
     transition: all 0.3s ease;
+    font-weight: bold;
 }
 
 .select::hover::after {
