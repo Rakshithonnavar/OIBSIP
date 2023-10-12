@@ -5,12 +5,11 @@
 }
 
 body {
-    background-color: aqua;
+    background: url("todo.jpg");
     color: black;
     font-family: "Poppins", sans-serif;
     min-height: 100vh;
 }
-
 header {
     font-size: 1.2rem;
     font-weight: bold;
@@ -39,10 +38,11 @@ form button {
     border: none;
     background: white;
     border-radius: 2rem;
+    
 }
 
 form button {
-    color: rgb(255, 200, 0);
+    color:blue;
     background: white;
     cursor: pointer;
     transition: all 0.3 ease;
@@ -57,6 +57,7 @@ form button:hover {
 .fa-plus-circle {
     margin-top: 0.3rem;
     margin-left: -8px;
+    border-radius: 1%;
 }
 
 .todo-container {
@@ -131,6 +132,7 @@ select {
     appearance: none;
     outline: none;
     border: none;
+    
 }
 
 .select {
@@ -146,12 +148,13 @@ select {
     height: 3.2rem;
     cursor: pointer;
     padding: 1rem;
+   
 }
 
 .select::after {
     content: "\25BC";
     position: absolute;
-    background:rgb(255, 200, 0);
+    background:blue;
     top: 0;
     right: 0;
     padding: 1rem;

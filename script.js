@@ -12,6 +12,13 @@ function addTodo(event) {
     event.preventDefault();
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
+    const todoText = todoInput.value.trim();
+
+    if(todoText === "")
+    {
+        alert("Please enter a valid task.");
+        return ;
+    }
     const newTodo = document.createElement("li");
     newTodo.innerText = todoInput.value; 
     newTodo.classList.add("todo-item");
@@ -32,6 +39,7 @@ function addTodo(event) {
     todoList.appendChild(todoDiv);
     todoInput.value = "";
 }
+
 
 function deleteCheck(e) {
     const item = e.target;
@@ -116,6 +124,7 @@ function getLocalTodos() {
         todoList.appendChild(todoDiv);
     });
 }
+
 
 function removeLocalTodos(todo) {
     let todos;
