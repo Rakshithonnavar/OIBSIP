@@ -16,7 +16,7 @@ function addTodo(event) {
 
     if(todoText === "")
     {
-        alert("Please enter a valid task.");
+        alert("Please enter a task.");
         return ;
     }
     const newTodo = document.createElement("li");

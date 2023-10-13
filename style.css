@@ -19,13 +19,19 @@ body {
 header {
     font-size: 1.2rem;
     font-weight: bold;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    animation: fade-in 6s forwards; 
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    left: -100%;
+    animation: slide-in-animation 1s forwards;
 }
-@keyframes fade-in {
-    from { opacity: 0; }
-    to { opacity: 1; }
+@keyframes slide-in-animation {
+    from {
+      left: -50%;
+    }
+    to {
+      left: 0;
+    }
 }
+
 
 header, 
 form {
@@ -45,8 +51,6 @@ form button {
     border-radius: 2rem;
     
 }
-
-
 
 form button {
     color:blue;
