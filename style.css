@@ -182,7 +182,7 @@ select {
 }
 
 .select::hover::after {
-    background: white;
+    background: transparent;
     color: rgb(255, 200, 0)
 }
 
